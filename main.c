@@ -7,19 +7,15 @@ int main(int argc, char *argv[]) {
 	int input;
 	int sec, min;
 	
-	printf("input second :");
+	printf("input year :");
 	
 	
 	//scanf
 	scanf("%i", &input);
 	
-	//calculate min
-	min = input % 60;
-	
-	//calculate sec
-	sec = input % 60;
 	
 	//print
-	printf("the time is %i : %i/n", min, sec);
+	printf("is %i : leap year? %i/n", input,
+	                                (input%4==0 && input%100!=0)(input%400==0) );
 	return 0;
 }
